@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1598548995573,
+  "timestamp": 1602967461572,
   "index": "/TaskList/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/TaskList/favicon.ico",
         "/TaskList/index.html",
-        "/TaskList/main.72487f71c098d2b86fab.js",
+        "/TaskList/main.5176fc1f31499c482854.js",
         "/TaskList/manifest.webmanifest",
         "/TaskList/polyfills.a4021de53358bb0fec14.js",
         "/TaskList/runtime.e227d1a0e31cbccbf8ec.js",
-        "/TaskList/styles.6835250783d08b9d3a97.css"
+        "/TaskList/styles.e0e08af38c9043a4f8ec.css"
       ],
       "patterns": []
     },
@@ -29,6 +29,7 @@
         "ignoreVary": true
       },
       "urls": [
+        "/TaskList/assets/dunes.jpg",
         "/TaskList/assets/icons/icon-128x128.png",
         "/TaskList/assets/icons/icon-144x144.png",
         "/TaskList/assets/icons/icon-152x152.png",
@@ -36,13 +37,16 @@
         "/TaskList/assets/icons/icon-384x384.png",
         "/TaskList/assets/icons/icon-512x512.png",
         "/TaskList/assets/icons/icon-72x72.png",
-        "/TaskList/assets/icons/icon-96x96.png"
+        "/TaskList/assets/icons/icon-96x96.png",
+        "/TaskList/assets/mobile_purple.jpg",
+        "/TaskList/dunes.e1716496e26cc91f8a8e.jpg"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
+    "/TaskList/assets/dunes.jpg": "ba60a27c09cde37783b9641da882e2be6c27e494",
     "/TaskList/assets/icons/icon-128x128.png": "a60cc2ef8e1974739b12ce5fe84735b62a14ca41",
     "/TaskList/assets/icons/icon-144x144.png": "98d2975cb675318ce1336e337d52860ecd51bc7b",
     "/TaskList/assets/icons/icon-152x152.png": "ef6212f3db188654080c98f9f1b719b74fa5e8db",
@@ -51,13 +55,15 @@
     "/TaskList/assets/icons/icon-512x512.png": "32f95637113d51678530e708294a18f0c9c223b7",
     "/TaskList/assets/icons/icon-72x72.png": "3120891cf58efc067d6306b2bb8594dad050606e",
     "/TaskList/assets/icons/icon-96x96.png": "9442f21b230b9a06f68e50851928e2e645dc6a85",
+    "/TaskList/assets/mobile_purple.jpg": "cd4d0cda31dc75ac9a7b44bab0a6b971ab0425bf",
+    "/TaskList/dunes.e1716496e26cc91f8a8e.jpg": "ba60a27c09cde37783b9641da882e2be6c27e494",
     "/TaskList/favicon.ico": "464f7490bb3909d2f4818391a5a2c2c87a6f55f0",
-    "/TaskList/index.html": "1259442145bc480f0c9c805ba8ddf51204698119",
-    "/TaskList/main.72487f71c098d2b86fab.js": "64032764cdc62c71afed540ab28c0920bd3be52b",
+    "/TaskList/index.html": "e4081e1c52dc6dab1b6e1e58939bd6c856caa6d8",
+    "/TaskList/main.5176fc1f31499c482854.js": "aaa0e880e5054a97300bd1a19cef4dcbd85a77d0",
     "/TaskList/manifest.webmanifest": "bd694c449d2bbbecda9f59c9f2828deaef56b454",
     "/TaskList/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
     "/TaskList/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/TaskList/styles.6835250783d08b9d3a97.css": "869ce4136f55163530aad2e81b708130a33a3530"
+    "/TaskList/styles.e0e08af38c9043a4f8ec.css": "29948fff4f0ef0190126642f430e14758c92ba34"
   },
   "navigationUrls": [
     {
