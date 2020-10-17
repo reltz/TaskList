@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1602967461572,
+  "timestamp": 1602968557012,
   "index": "/TaskList/index.html",
   "assetGroups": [
     {
@@ -23,7 +23,7 @@
     },
     {
       "name": "assets",
-      "installMode": "lazy",
+      "installMode": "prefetch",
       "updateMode": "prefetch",
       "cacheQueryOptions": {
         "ignoreVary": true
