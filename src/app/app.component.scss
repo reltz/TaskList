@@ -11,12 +11,13 @@ mat-form-field {
 
 .title {
 	font-size: 2em;
-	color: $app-accent;
+	// color: $app-accent;
+	color: #ffffff;
 }
 
 .app {
 	margin: 40px;
-	background-color: $app-primary;
+	background-color: rgba(0,0,0,0);
 	height: 100vh;
 	padding: 25px;
 }
@@ -28,6 +29,22 @@ mat-form-field {
 .header-buttons {
 	margin-right: 0;
 	margin-top: -10px;
+	color: white;
+}
+
+:host ::ng-deep .no-underline {
+	.mat-form-field-underline {
+			display: none;
+	}
+}
+
+:host ::ng-deep .white-font {
+	.mat-select-value-text {
+		color: white;
+	}
+	.mat-select-arrow {
+		color: white;
+	}
 }
 
 .mat-icon {
@@ -36,6 +53,16 @@ mat-form-field {
 
 .mat-raised-button {
 	margin-left: 30px;
+}
+
+mat-card-footer {
+	margin-top: 20%;
+	margin-left: 1vw;
+
+	a {
+		color:white;
+		font-size: 1em;
+	}
 }
 
 @media (max-width: $breakpoint-phone) {

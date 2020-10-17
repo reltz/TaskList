@@ -34,7 +34,7 @@ export class AppComponent implements OnInit, OnDestroy
 	{
 		this.control = new FormControl('single');
 		this.service.loadAll();
-		this.title = 'Rod\'s TaskList App';
+		this.title = 'TaskList App';
 
 		this.viewType$ = this.control.valueChanges.pipe(
 			startWith('single'),

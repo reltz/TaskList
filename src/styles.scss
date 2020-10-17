@@ -1,13 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import './defaults.scss';
 
+
 html,
 body {
 	height: 100%;
 }
 body {
 	margin: 0;
-	background-color: $app-primary;
+	// background-color: $app-primary;
+	background-image: url('./assets/dunes.jpg');
+	background-size: cover;
 	font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 
