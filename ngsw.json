@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1602969517944,
+  "timestamp": 1603140674801,
   "index": "/TaskList/index.html",
   "assetGroups": [
     {
@@ -17,7 +17,7 @@
         "/TaskList/manifest.webmanifest",
         "/TaskList/polyfills.a4021de53358bb0fec14.js",
         "/TaskList/runtime.e227d1a0e31cbccbf8ec.js",
-        "/TaskList/styles.745d2fd1861c2d8fb7a8.css"
+        "/TaskList/styles.2471f0d25d2ed4727074.css"
       ],
       "patterns": []
     },
@@ -62,12 +62,12 @@
     "/TaskList/dunes.e1716496e26cc91f8a8e.jpg": "ba60a27c09cde37783b9641da882e2be6c27e494",
     "/TaskList/dunes_mobile.5a833313b16d8293b77f.jpg": "df5a0f9724f79d78e4e1e094951201bba5241b31",
     "/TaskList/favicon.ico": "464f7490bb3909d2f4818391a5a2c2c87a6f55f0",
-    "/TaskList/index.html": "895888ba65ee0b6c512a6d49483e52cc95d73198",
+    "/TaskList/index.html": "fbcb7e909e7502827b6b627e85abfe1857914b41",
     "/TaskList/main.5176fc1f31499c482854.js": "aaa0e880e5054a97300bd1a19cef4dcbd85a77d0",
     "/TaskList/manifest.webmanifest": "bd694c449d2bbbecda9f59c9f2828deaef56b454",
     "/TaskList/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
     "/TaskList/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/TaskList/styles.745d2fd1861c2d8fb7a8.css": "75281231a796f71b29a422abb6f5c09915f4ae80"
+    "/TaskList/styles.2471f0d25d2ed4727074.css": "766f50e5f155a04e373cc723d31b35ba849230b0"
   },
   "navigationUrls": [
     {
