@@ -9,3 +9,10 @@ export interface IContent {
 	isChecked: boolean;
 	text: string;
 }
+
+export type viewModes = 'multi' | 'single';
+
+export interface IAuxInfo {
+	viewMode: viewModes;
+	activeId: string;
+}

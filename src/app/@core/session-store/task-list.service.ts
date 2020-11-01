@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { MockAdapter } from 'src/app/Adapters/mock-adapter.service';
+import { TaskListQuery } from './task-list-query';
 import { TaskListStore } from './task-list-store';
-import { IList } from './taskListModel';
+import { IList, viewModes } from './taskListModel';
 
 @Injectable({
 	providedIn: 'root',
@@ -10,6 +11,7 @@ export class TaskListService {
 	constructor(
 		private store: TaskListStore,
 		private api: MockAdapter,
+		private query: TaskListQuery,
 	) { }
 
 	public loadAll() {
@@ -26,14 +28,20 @@ export class TaskListService {
 	}
 
 	public delete(id: string) {
+		const first = this.query.getAll().length < 2
+			? null
+			: this.query.getAll()[0].id;
+		this.setActive(first || 'null');
 		this.api.delete(id);
 	}
 
 	public setActive(id: string) {
-		this.store.update({ active: id });
+		this.store.setActive(id);
+		this.api.setAuxInfo({ activeId: id });
 	}
 
-	public unsetActive() {
-		this.store.update({ active: '' });
+	public setViewMode(mode: viewModes) {
+		this.api.setAuxInfo({ viewMode: mode });
+		this.store.update({ viewMode: mode });
 	}
 }

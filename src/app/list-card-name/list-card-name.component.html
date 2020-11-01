@@ -1,4 +1,4 @@
-<mat-card (click)="clickHandler()" [ngClass]="isActiveOne ? 'active' : ''">
+<mat-card (click)="clickHandler()" [ngClass]="(isActiveOne$ | async) ? 'active' : ''">
 	<mat-card-content>
 		<div class="list-name-wrapper">
 			<span class="list-name">

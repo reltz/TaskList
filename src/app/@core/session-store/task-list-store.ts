@@ -1,12 +1,13 @@
-import { EntityState, EntityStore, StoreConfig } from '@datorama/akita';
-import { IList } from './taskListModel';
+import { ActiveState, EntityState, EntityStore, StoreConfig } from '@datorama/akita';
+import { IList, viewModes } from './taskListModel';
 
-export interface TaskListState extends EntityState<IList> {
-	active: string;
+export interface TaskListState extends EntityState<IList>, ActiveState {
+	viewMode: viewModes;
 }
 
 export function createInitialState(): TaskListState {
 	return {
+		viewMode: 'single',
 		active: '',
 	};
 }
