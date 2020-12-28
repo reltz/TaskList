@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>Login </h1>
+<div mat-dialog-content>
+	<div>
+		<p>Enter your email and password or login with your google account.</p>
+	</div>
+	<mat-form-field>
+		<label>Email: </label>
+		<input matInput>
+	</mat-form-field>
+	<mat-form-field>
+		<label>Password: </label>
+		<input matInput type="password">
+	</mat-form-field>
+
+</div>
+<div mat-dialog-actions>
+	<button mat-raised-button>
+		Login
+	</button>
+
+	<button mat-flat-button
+			[mat-dialog-close]="false">Cancel</button>
+</div>

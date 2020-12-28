@@ -28,6 +28,7 @@ import { RestoreDialogComponent } from './restore-dialog/restore-dialog.componen
 import { BackupRestoreService } from './services/backup-restore.service';
 import { UtilityService } from './services/utility.service';
 import { SingleViewComponent } from './single-view/single-view.component';
+import { LoginDialogComponent } from './login-dialog/login-dialog.component';
 
 const matModules = [
 	MatCardModule,
@@ -51,6 +52,7 @@ const matModules = [
 		ConfirmDeleteDialogComponent,
 		SingleViewComponent,
 		MultiViewComponent,
+		LoginDialogComponent,
 	],
 	imports: [
 		BrowserModule,

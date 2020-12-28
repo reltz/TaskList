@@ -7,6 +7,7 @@ import { v4 as makeUUid } from 'uuid';
 import { TaskListQuery } from './@core/session-store/task-list-query';
 import { TaskListService } from './@core/session-store/task-list.service';
 import { viewModes } from './@core/session-store/taskListModel';
+import { LoginDialogComponent } from './login-dialog/login-dialog.component';
 import { RestoreDialogComponent } from './restore-dialog/restore-dialog.component';
 import { BackupRestoreService } from './services/backup-restore.service';
 import { UtilityService } from './services/utility.service';
@@ -16,7 +17,8 @@ import { UtilityService } from './services/utility.service';
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit, OnDestroy {
+export class AppComponent implements OnInit, OnDestroy
+{
 	public title: string;
 	public control: FormControl;
 	public isAlive: boolean = true;
@@ -29,12 +31,23 @@ export class AppComponent implements OnInit, OnDestroy {
 		protected readonly utility: UtilityService,
 		protected readonly dialog: MatDialog,
 		protected readonly query: TaskListQuery,
-	) {
+	)
+	{
 	}
 
-	public ngOnInit() {
+	public ngOnInit()
+	{
 
-		this.service.loadAll();
+		if (localStorage.getItem('RunAppLocally') === 'true')
+		{
+			this.service.loadAll();
+		}
+		else
+		{
+			this.dialog.open(LoginDialogComponent)
+				.afterClosed();
+		}
+
 		this.title = 'TaskList App';
 
 		this.query.select()
@@ -50,11 +63,13 @@ export class AppComponent implements OnInit, OnDestroy {
 		);
 	}
 
-	public ngOnDestroy() {
+	public ngOnDestroy()
+	{
 		this.isAlive = false;
 	}
 
-	public download() {
+	public download()
+	{
 		const link = document.createElement("a");
 		link.href = this.backupRestore.downloadBackup();
 
@@ -64,12 +79,14 @@ export class AppComponent implements OnInit, OnDestroy {
 		link.click();
 	}
 
-	public handleRestore() {
+	public handleRestore()
+	{
 		this.dialog.open(RestoreDialogComponent)
 			.afterClosed();
 	}
 
-	public addNewList(): void {
+	public addNewList(): void
+	{
 		this.service.upsert({
 			title: 'Title',
 			id: makeUUid(),
